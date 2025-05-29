@@ -6,10 +6,12 @@ use App\Filament\Resources\SettingResource\Pages;
 use App\Filament\Resources\SettingResource\RelationManagers;
 use App\Models\Setting;
 use Filament\Forms;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
@@ -28,7 +30,7 @@ class SettingResource extends Resource
                 TextInput::make('nama_sekolah')->required(),
                 TextInput::make('kepala_sekolah')->required(),
                 TextInput::make('alamat_sekolah')->required(),
-                 TextInput::make('foto_sekolah')->required(),
+                 FileUpload::make('foto_sekolah')->required(),
                   TextInput::make('visi')->required(),
                    TextInput::make('misi')->required()
             ]);
@@ -41,7 +43,7 @@ class SettingResource extends Resource
                 TextColumn::Make('nama_sekolah'),
                 TextColumn::Make('kepala_sekolah'),
                 TextColumn::Make('alamat_sekolah'),
-                TextColumn::Make('foto_sekolah'),
+                ImageColumn::Make('foto_sekolah'),
                 TextColumn::Make('visi'),
                 TextColumn::Make('misi')
                

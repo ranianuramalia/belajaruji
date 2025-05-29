@@ -20,15 +20,14 @@
     </button>
    
       <form class="d-flex" >    
-          <a class="nav-link" aria-current="page" href="{{ route('profil') }}">PROFIL</a> &nbsp;
-          <a class="nav-link" aria-current="page" href="">VISI & MISI</a>&nbsp;
+          <a class="nav-link" aria-current="page" href="profil.blade.php">PROFIL</a> &nbsp;
+          <a class="nav-link" aria-current="page" href="#">VISI & MISI</a>&nbsp;
           <a class="nav-link" aria-current="page" href="#">DATA POKOK</a> &nbsp;
         
         <a class="nav-link active" aria-current="page" href="/admin/login">LOGIN</a>
       </form>
     </div>
 </nav>
-rttnh
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
 </html>
